@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>X-PLAY | Киберспортивный клуб Норильск</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- НЕОНОВЫЙ КРУГ ЗА КУРСОРОМ -->
+  <div id="cursorGlow"></div>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">X-<span class="highlight">PLAY</span></span>
+      </div>
+      <nav class="nav" id="mainNav">
+        <a href="#" data-section="about" class="active-link">О нас</a>
+        <a href="#" data-section="zones">Залы</a>
+        <a href="#" data-section="prices">Цены</a>
+        <a href="#" data-section="booking">Бронь</a>
+        <a href="#" data-section="contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- О НАС -->
+    <section id="section-about" class="section active">
+      <div class="container section-content">
+        <div class="hero-text">
+          <span class="hero-tag">🔮 НОРИЛЬСК &bull; CYBER ARENA</span>
+          <h1>Твой игровой <br><span class="gradient-text">мир</span> начинается здесь</h1>
+          <p>Мощные ПК, PlayStation, Xbox, VR-зона и уникальная киберспортивная атмосфера для настоящих геймеров.</p>
+          <a href="#" class="btn-primary pulse" data-section="booking">Забронировать место</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span>25+</span><label>МОЩНЫХ ПК</label></div>
+          <div class="stat"><span>4</span><label>ПРИСТАВКИ</label></div>
+          <div class="stat"><span>VR</span><label>ЗОНА</label></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЗАЛЫ -->
+    <section id="section-zones" class="section">
+      <div class="container section-content zones-content">
+        <h2>Наши <span class="gradient-text">залы</span></h2>
+        <div class="zone-grid">
+          <div class="zone-card glow-card">
+            <div class="zone-icon">🖥️</div>
+            <div class="zone-info">
+              <h3>PC-зал</h3>
+              <p>12 топовых ПК на базах RTX 4060, i7, 32 ГБ ОЗУ. Максимальный FPS и киберспортивная периферия.</p>
+            </div>
+          </div>
+          <div class="zone-card glow-card">
+            <div class="zone-icon">🎮</div>
+            <div class="zone-info">
+              <h3>Приставки</h3>
+              <p>PlayStation 5, Xbox Series X, Nintendo Switch. Уютные диваны и огромные 4K-экраны.</p>
+            </div>
+          </div>
+          <div class="zone-card glow-card">
+            <div class="zone-icon">🥽</div>
+            <div class="zone-info">
+              <h3>VR-зона</h3>
+              <p>Погрузись в виртуальную реальность нового уровня. Доступно 2 шлема последнего поколения.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section id="section-prices" class="section">
+      <div class="container section-content prices-content">
+        <h2>Цены <span class="gradient-text">на игры</span></h2>
+        <div class="prices-wrapper">
+          <div class="price-block glow-card">
+            <h3 class="price-category">STANDART</h3>
+            <table class="price-table">
+              <thead><tr><th>ТАРИФ</th><th>БУД</th><th>ВЫХ</th></tr></thead>
+              <tbody>
+                <tr><td>1 час игры</td><td>119 ₽</td><td>179 ₽</td></tr>
+                <tr><td>3 часа игры</td><td>430 ₽</td><td>550 ₽</td></tr>
+                <tr><td>5 часов игры</td><td>690 ₽</td><td>920 ₽</td></tr>
+                <tr><td>Пакет ночь</td><td>890 ₽</td><td>1190 ₽</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="price-block glow-card vip-block">
+            <div class="badge">POPULAR</div>
+            <h3 class="price-category">VIP</h3>
+            <table class="price-table">
+              <thead><tr><th>ТАРИФ</th><th>БУД</th><th>ВЫХ</th></tr></thead>
+              <tbody>
+                <tr><td>1 час игры</td><td>179 ₽</td><td>239 ₽</td></tr>
+                <tr><td>3 часа игры</td><td>550 ₽</td><td>700 ₽</td></tr>
+                <tr><td>5 часов игры</td><td>920 ₽</td><td>1150 ₽</td></tr>
+                <tr><td>Пакет ночь</td><td>1190 ₽</td><td>1490 ₽</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="price-block glow-card ps-block">
+            <h3 class="price-category">PLAYSTATION</h3>
+            <table class="price-table ps-table">
+              <thead><tr><th>ЗОНА</th><th>БУД</th><th>ВЫХ</th></tr></thead>
+              <tbody>
+                <tr><td>PS ROOM (1 час)</td><td>400 ₽</td><td>500 ₽</td></tr>
+                <tr><td>PS VIP 2 (1 час)</td><td>600 ₽</td><td>700 ₽</td></tr>
+                <tr><td>PS VIP 1 (1 час)</td><td>800 ₽</td><td>900 ₽</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БРОНИРОВАНИЕ -->
+    <section id="section-booking" class="section">
+      <div class="container section-content">
+        <h2>Забронировать <span class="gradient-text">место</span></h2>
+        <p class="booking-desc">Выбери филиал, оставь заявку — мы перезвоним и подтвердим бронь.</p>
+        <form id="bookingForm" class="booking-form">
+          <div class="input-group">
+            <input type="text" id="userName" placeholder="Твоё имя" required />
+          </div>
+          <div class="input-group">
+            <input type="tel" id="userPhone" placeholder="+7 (___) ___-__-__" required />
+          </div>
+          <div class="input-group">
+            <input type="date" id="userDate" required />
+          </div>
+          <div class="input-group">
+            <select id="branchSelect" required>
+              <option value="">Выбери филиал</option>
+              <option value="norilsk">📍 Норильск (Ленинский пр-т, 1)</option>
+              <option value="talnah">📍 Талнах (ул. Федоровского, 15)</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <select id="hallSelect" required>
+              <option value="">Выбери зал</option>
+              <option value="pc">PC-зал</option>
+              <option value="ps">Приставки</option>
+              <option value="vr">VR-зона</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary pulse">Отправить заявку</button>
+        </form>
+        <div id="notification" class="notification hidden"></div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="section-contacts" class="section">
+      <div class="container section-content">
+        <h2>Контакты <span class="gradient-text">X-PLAY</span></h2>
+        <div class="contact-grid">
+          <div class="contact-item glow-card">
+            <strong>📍 Норильск</strong><br>Ленинский пр-т, 1<br><a href="tel:+79770341018">📞 +7 977 034-10-18</a>
+          </div>
+          <div class="contact-item glow-card">
+            <strong>📍 Талнах</strong><br>ул. Федоровского, 15<br><a href="tel:+79997654321">📞 +7 (999) 765-43-21</a>
+          </div>
+          <div class="contact-item glow-card">
+            <strong>📧 Email</strong><br>xplay@norilsk.ru
+          </div>
+          <div class="contact-item glow-card">
+            <strong>🕒 Режим работы</strong><br>Ежедневно с 10:00 до 02:00
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container"><p>© 2026 X-PLAY. Все права защищены. Сделано в Норильске ❤️</p></div>
+  </footer>
+
+  <script>
+    // ===== КРУГ ЗА КУРСОРОМ =====
+    const glow = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+
+    // ===== ПЕРЕКЛЮЧЕНИЕ СЕКЦИЙ =====
+    const navLinks = document.querySelectorAll('#mainNav a');
+    const sections = {
+      about: document.getElementById('section-about'),
+      zones: document.getElementById('section-zones'),
+      prices: document.getElementById('section-prices'),
+      booking: document.getElementById('section-booking'),
+      contacts: document.getElementById('section-contacts')
+    };
+
+    function switchSection(sectionId) {
+      Object.values(sections).forEach(sec => sec.classList.remove('active'));
+      if (sections[sectionId]) {
+        sections[sectionId].classList.add('active');
+        const content = sections[sectionId].querySelector('.section-content');
+        if (content) {
+          content.style.animation = 'none';
+          setTimeout(() => { content.style.animation = 'fadeUp 0.5s ease forwards'; }, 10);
+        }
+      }
+      navLinks.forEach(link => {
+        link.classList.remove('active-link');
+        if (link.dataset.section === sectionId) link.classList.add('active-link');
+      });
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const section = link.dataset.section;
+        if (section) switchSection(section);
+      });
+    });
+
+    document.querySelectorAll('[data-section="booking"]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        switchSection('booking');
+      });
+    });
+
+    // ===== МАСКА ДЛЯ ТЕЛЕФОНА =====
+    const phoneInput = document.getElementById('userPhone');
+    phoneInput.addEventListener('focus', function() {
+      if (!this.value.startsWith('+7')) this.value = '+7 ';
+    });
+    phoneInput.addEventListener('input', function() {
+      let raw = this.value.replace(/[^\d+]/g, '');
+      if (!raw.startsWith('+7')) raw = '+7' + raw.replace(/^\+7/, '');
+      const digits = raw.replace(/\D/g, '');
+      let formatted = '+7';
+      if (digits.length > 1) {
+        const d = digits.slice(1);
+        if (d.length > 0) formatted += ' (' + d.slice(0, 3);
+        if (d.length > 3) formatted += ') ' + d.slice(3, 6);
+        if (d.length > 6) formatted += '-' + d.slice(6, 8);
+        if (d.length > 8) formatted += '-' + d.slice(8, 10);
+      }
+      this.value = formatted;
+    });
+
+    // ===== ОТПРАВКА В WHATSAPP =====
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('userName').value.trim();
+      const phone = document.getElementById('userPhone').value.trim();
+      const date = document.getElementById('userDate').value;
+      const branchSelect = document.getElementById('branchSelect');
+      const branch = branchSelect.value;
+      const branchName = branchSelect.options[branchSelect.selectedIndex]?.text || 'не выбран';
+      const hall = document.getElementById('hallSelect');
+      const hallName = hall.options[hall.selectedIndex]?.text || 'не выбран';
+
+      if (!branch) { showNotification('⚠️ Выбери филиал.', 'error'); return; }
+      if (!name) { showNotification('⚠️ Введи имя.', 'error'); return; }
+      if (phone.replace(/\D/g, '').length < 11) { showNotification('⚠️ Введи корректный номер.', 'error'); return; }
+      if (!date) { showNotification('⚠️ Выбери дату.', 'error'); return; }
+
+      const whatsappNumber = '79770341018';
+      const message = `✅ НОВАЯ ЗАЯВКА НА БРОНЬ\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n📅 Дата: ${date}\n📍 Филиал: ${branchName}\n🖥️ Зал: ${hallName}`;
+
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+      showNotification('✅ Заявка успешно отправлена! Администратор свяжется с вами.', 'success');
+      this.reset();
+    });
+
+    // ===== УВЕДОМЛЕНИЕ =====
+    function showNotification(message, type) {
+      const el = document.getElementById('notification');
+      el.textContent = message;
+      el.className = 'notification visible ' + type;
+      setTimeout(() => el.classList.remove('visible'), 5000);
+    }
+
+    // ===== СТАРТ =====
+    switchSection('about');
+  </script>
+
+</body>
+</html>
